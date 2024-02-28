@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{ 
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+	width: 100%;
+    min-height: 100%;
+    transition: all 0.25s cubic-bezier(0.075, 0.1, 0.165, 1);
+    background-color: #FFF;
+    color: #FFF;
+}
+
+.form-container{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+form{
+    width: 700px;
+    height: auto;
+    background-color: rgba(22, 160, 133, 1);
+    border-radius: 24px;
+    padding: 35px 50px;
+}
+
+form p{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+form div{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+form input,textarea,button{
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 0px 20px;
+    font-size: 17px;
+    caret-color: rgba(22, 160, 133, 1);
+    background-repeat: no-repeat !important;
+    background-position: center right 20px !important;
+}
+
+form .full-name-wrapper input{
+    background-image: url(./assets/user-icon.svg);
+}
+form .email-wrapper input{
+    background-image: url(./assets/email-icon.svg);
+}
+
+form .phone-number input{
+    background-image: url(./assets/phone-call-icon.svg);
+}
+
+form div textarea{
+    height: 50px;
+    padding: 5px 20px;
+    resize: none;
+    overflow: hidden;
+}
+
+form button{
+    width: 480px;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 49px;
+    color: #FFF;
+    font-weight: 500;
+    background-color: rgba(3,138,255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+form button::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    right: 8px;
+    bottom: 10px;
+    z-index: 2;
+    background-image: url(./assets/arrow-icon.svg);
+    transform: rotate(30deg);
+}
+form button:hover {
+    background-color: rgba(137,196,244, 1);
+}
+
+form button:hover::before {
+    transform: rotate(90deg);
+    bottom: 7px;
+}
+
+@media screen and (max-width: 800px) {
+    form{
+        width: 500px;
+    }
+    form button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-container{
+        padding: 0px 10px;
+        background-image: url(./assets/bg-mobile.jpg);
+    }
+    form{
+        width: 100%;
+        padding: 35px 15px;
+    }
+}
