@@ -34,8 +34,32 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
+.popup-container{
+    width: 300px;
+    height: 80px;
+    background-color: rgba(3,138,255, 1);
+    position: absolute;
+    top: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 5px 0px 0px;
+}
+
+.popup-container p{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+}
+.popup-container img{
+    align-self: flex-start;
+    cursor: pointer;
+ }
 form{
     width: 700px;
     height: auto;
@@ -146,5 +170,11 @@ form button:hover::before {
     form{
         width: 100%;
         padding: 35px 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .popup-container{
+        width: 90%;
     }
 }
