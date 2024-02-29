@@ -68,6 +68,7 @@ form{
     background-color: rgba(22, 160, 133, 1);
     border-radius: 24px;
     padding: 35px 50px;
+    box-shadow: 15px 15px 30px #0000004d;
 }
 
 form p{
