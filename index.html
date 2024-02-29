@@ -8,40 +8,40 @@
     <title>Booking Form</title>
 </head>
 <body>
-    <div class="form-container">
-        <div class="popup-container" aria-labelledby="booking success message">
-            <p>Appointment successfully made.</p>
-            <img src="./assets/cancel-icon.png" alt="cancel icon"/>
+    <div class="container">
+        <div class="modal-box" id="modal-box" aria-labelledby="booking success message">
+            <p id="modal-text"></p>
+            <img src="./assets/close-icon.svg" alt="cancel icon" id="modal-close-icon"/>
         </div>
-        <form method="POST" aria-label="Patient booking appointment">
-            
+
+        <form method="POST" aria-label="Patient booking appointment" name="form">  
             <p>Patient Information</p>
-            <div class="full-name-wrapper">
-                <label>Full Name</label>
-                <input type="text"/>
+            <div class="fullName-wrapper">
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" id="fullName"/>
             </div>
 
             <div class="email-wrapper">
-                <label>Email</label>
-                <input type="email"/>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"/>
             </div>
 
             <div class="phone-number">
-                <label>Phone Number</label>
-                <input type="text"/>
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" name="phoneNumber" id="phoneNumber"/>
             </div>
           
             <p>Appointment Details</p>
             <div class="">
-                <label>Date and Time</label>
-                <input type="datetime"/>
+                <label for="datetime">Date and Time</label>
+                <input type="datetime" name="datetime" id="datetime"/>
             </div>
 
             <div class="">
-                <textarea placeholder="Purpose/Reason for the appointment"></textarea>
+                <textarea name="reason" placeholder="Purpose/Reason for the appointment"></textarea>
             </div>
         
-            <button type="submit" aria-label="Book appointment">Book an Appointment</button>
+            <button type="submit" aria-label="Book appointment" id="book-btn">Book an Appointment</button>
         </form>
     </div>
     <script src="./app.js"></script>
