@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container">
+        
         <div class="modal-box" id="modal-box" aria-labelledby="booking success message">
             <p id="modal-text"></p>
             <img src="./assets/close-icon.svg" alt="cancel icon" id="modal-close-icon"/>
@@ -32,9 +33,9 @@
             </div>
           
             <p>Appointment Details</p>
-            <div class="">
-                <label for="datetime">Date and Time</label>
-                <input type="datetime" name="datetime" id="datetime"/>
+            <div class="datetime-wrapper">
+                <label for="datetimelocal">Date and Time</label>
+                <input type="datetime-local" name="datetimelocal" id="datetimelocal"/>
             </div>
 
             <div class="">
@@ -43,6 +44,7 @@
         
             <button type="submit" aria-label="Book appointment" id="book-btn">Book an Appointment</button>
         </form>
+
     </div>
     <script src="./app.js"></script>
 </body>
