@@ -27,6 +27,7 @@ body{
 .container{
     width: 100dvw;
     height: 100dvh;
+    margin: auto auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,6 +69,7 @@ body{
 form{
     width: 700px;
     height: auto;
+    margin: auto auto;
     background-color: rgba(22, 160, 133, 1);
     border-radius: 24px;
     padding: 35px 50px;
